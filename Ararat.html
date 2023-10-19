@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Website</title>
+	<style type="text/css">
+		.header{
+			display: flex;
+			margin: 0px;
+               padding: 10px;
+			justify-content: space-evenly;
+			position: sticky;
+			top: 0px;
+			overflow: hidden;
+			background-color: white;
+			border: 1px solid white;
+			z-index: 1;
+
+		}
+		.header .center ul{
+                 list-style-type: none;
+                 display: flex;
+                 gap: 20px;
+                 padding: 10px;
+		}
+		.header .btn-outline{
+			padding: 10px;
+			margin-top: 15px;
+			background-color: transparent;
+		}
+		.header .center li:hover{
+			color: lightgray;
+			cursor: pointer;
+		}
+		.header .btn-outline:hover{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+		}
+		.section .centered{
+			position: absolute;
+			top: 40%;
+			left: 20%;
+
+		}
+		.centered h1{
+			color: white;
+			font-size: 60px;
+			letter-spacing: 6px;
+		}
+		.centered p{
+			color: white;
+			text-align: center;
+			font-size: 20px;
+			letter-spacing: 2px;
+		}
+		.centered .btn1{
+			padding: 20px;
+			letter-spacing: 5px;
+			background-color: transparent;
+			margin-left: 30%;
+		}
+		.centered .btn1:hover{
+			background-color: white;
+			cursor: pointer;
+		}
+		.section1 {
+              position: relative;
+              display: flex;
+              justify-content: space-evenly;
+          }
+
+          .section1 .left1 {
+              position: absolute;
+              top: 35%;
+              left: 20%;
+              background-color: white;
+              color: black;
+              padding: 25px;
+              
+              
+          }
+          .section1 .right1{
+          	width: 35%;
+          }
+          .right1 ul{
+          	list-style-type: none;
+          	font-size: 20px;
+
+          }
+          .section1 ul li::before {
+          content: "\2022";
+          color: green;
+          font-weight: bold;
+          display: inline-block; 
+          width: 1em;
+          
+          font-size: 40px;
+         }
+         .btn2-outline{
+         	padding: 15px;
+         	letter-spacing: 5px;
+          background-color: transparent;
+          border: 1px solid;
+          position: relative;
+          top: 20px;
+          left: 10px;
+         }
+         .btn2-outline:hover{
+         	background-color: black;
+         	color: white;
+         	cursor: pointer;
+         }
+         .section2{
+         	text-align: center;
+         }
+         .section2 .center2{
+         	display: flex;
+         	justify-content: space-evenly;
+         }
+         .content3{
+         	display: flex;
+         	justify-content: space-evenly;
+         }
+         .btn3-outline{
+         	background-color: transparent;
+         	padding: 20px;
+         	letter-spacing: 5px;
+         }
+         .btn3-outline:hover{
+         	background-color: black;
+         	color: white;
+         	cursor: pointer;
+         }
+         .header3{
+         	margin-left: 150px;
+         }
+         .section4{
+         	background-image: url('ar11.jpg');
+         	height: 500px;
+         	margin-top: 100px;
+         }
+         .section4 .para{
+         	text-align: center;
+         	padding: 150px;
+         }
+         .section5{
+         	margin-top: 100px;
+         	display: flex;
+         	justify-content: space-evenly;
+         }
+         .section5 .right5{
+         	width: 30%;
+         	margin-top: 40px;
+         }
+         input[type=email] {
+           width: 100%;
+  
+           color: grey;
+           padding: 20px 20px;
+           margin: 8px 0;
+           border: 2px solid gray;
+           border-radius: 4px;
+           cursor: pointer
+      }
+      input[type=text] {
+           width: 100%;
+  
+           color: grey;
+           padding: 20px 20px;
+           margin: 8px 0;
+           border: 2px solid gray;
+           border-radius: 4px;
+           cursor: pointer
+      }
+      .btn4-outline{
+         	background-color: transparent;
+         	padding: 20px 40px;
+         	letter-spacing: 5px;
+         }
+         .btn4-outline:hover{
+         	background-color: black;
+         	color: white;
+         	cursor: pointer;
+         }
+         
+         hr{
+      	width:50%;
+      	margin-left: 525px;
+      	background-color: white;
+      	height:0.2px;
+
+      }
+      .footer{
+      	
+      	padding-top: 100px;
+      	background-color: black;
+      	height:700px;
+      	margin-top: 100px;
+      }
+         .footer1{
+			display: flex;
+			justify-content: space-evenly;
+			background-color: black;
+			color: white;
+			padding: 10px;
+		}
+		.btn6-outline{
+			padding: 10px;
+			margin-top: 30px;
+			letter-spacing: 1px;
+			background-color: black;
+			color: white;
+			border: 2px solid white;
+			height: 70px;
+			width: 170px;
+			cursor: pointer;
+		}
+		.btn6-outline:hover{
+			background-color: white;
+			color: black;
+		}
+		.footer2{
+			display: flex;
+			justify-content: center;
+			background-color: black;
+			color: white;
+			padding: 10px;
+			cursor: pointer;
+		}
+		ul li{
+			list-style-type: none;
+		}
+
+         .fa {
+          padding: 10px;
+          font-size: 20px;
+          width: 20px;
+          text-align: center;
+          text-decoration: none;
+          border: 1px solid;
+          border-radius: 50%;
+         }
+
+         .fa:hover {
+          opacity: 0.7;
+         }
+
+         .fa-facebook {
+          background: grey;
+          color: white;
+         }
+
+       .fa-instagram{
+        background: grey;
+        color: white;
+        
+       }
+       .fa-linkedin {
+       background: grey;
+       color: white;
+       
+      }
+      @media (max-width:476px){
+      	.header{
+      		display: flex;
+      		flex-direction: column;
+      		text-align: center;
+      		width: 476px;
+      	}
+      	.center{
+      		font-size: 10px;
+      		gap: 3px;
+      	}
+      	.centered{
+      		margin-top: 120px;
+      	}
+      	.center2{
+      		flex-direction: column;
+      	}
+      	.content3{
+      		flex-direction: column;
+      	}
+      	.cont2{
+                text-align: center;
+                margin-left: 150px;
+      	}
+      	.section5{
+      		flex-direction: column;
+
+      	}
+      	.img1{
+      		width: 400px;
+      	}
+      	.img2{
+      		width: 476px;
+      	}
+      	.img3{
+      		width: 476px;
+      	}
+      	.img4{
+      		width: 476px;
+      	}
+      	.img5{
+      		width: 476px;
+      	}
+      	.img6{
+      		width: 476px;
+      	}
+      	.right5{
+      		margin-left: 20px;
+      		width: 476px;
+      	}
+      	.footer1{
+      		font-size: 8px;
+      		justify-content: center;
+      		flex-direction: column;
+      		margin-left: 100px;
+
+      	}
+      	
+      	.section1{
+      		width: 476px;
+      		flex-direction: column;
+      	}
+      	.left1{
+      		margin-top: -350px;
+
+      	}
+      	.right1{
+      		text-align: center;
+      		margin-left: 80px;
+      	}
+      	.btn1{
+      		width: 34%;
+      		letter-spacing: 0px;
+               padding: 5px;
+               height: 20px;
+               font-size: 9px;
+
+      	}
+      	.header3{
+      		margin-left: 100px;
+      	}
+      }
+	</style>
+</head>
+<body>
+     <div class="header">
+     	<div class="left">
+     		<h2><span style="letter-spacing: 2px;">ARARAT </span><br><span style="color: lightgray; font-size: 14px;">ARCHITECTURE</span></h2>
+     	</div>
+     	<div class="center">
+     		<ul>
+     			<li>HOME</li>
+     			<li>ABOUT</li>
+     			<li>PROJECTS</li>
+     			<li>SERVICES</li>
+     			<li>BLOG</li>
+     			<li>PAGES</li>
+     			<li>CONTACT</li>
+     		</ul>
+     	</div>
+     	<div class="right">
+     		<button class="btn-outline">GET IN TOUCH</button>
+     	</div>
+     </div>
+    <div class="section">
+    	<img src="ar1.jpg" alt="image" style="width:100%; height: 700px;">
+    	<div class="centered">
+    		<h1 >WE DESIGN YOUR SPACE</h1>
+    		<p>lorus swhft chsae vhhde piel dhswy xushd diosjh dsasiygq asuwh</p>
+    	<button class="btn1">SEE OUR PROJECTS</button>
+    </div>
+   </div><br><br><br><br><br>
+   <div class="section1"style="z-index: -1;">
+   	<img src="ar2.jpg" alt="pic" width="30%" class="img1">
+   		<div class="left1">
+        <h1 style="text-align: center;font-size: 40px;">25</h1>
+        <p>Years of Experience</p>
+   	</div>
+   	<div class="right1">
+   		<h3 style="color: lightgray;">ABOUT US</h3>
+   		<h1 style="font-size: 50px;">Architechtural Plan <br>design and build</h1>
+   		<p>_________________</p>
+   		<p style="font-size: 20px; letter-spacing: 1px;">lorum dshah efpifew scidsjgru c esufhwe dsfus hto assauh fewuwv dshg iil gtiur  fryesuof sdferieu weoy  egtuu viugter fsd8e ueihtr suw rgeri dwua htrotr v bufysd faefuwu few8fw guerhe fwuw wrwe </p>
+   		<ul>
+   			<li>fisgdriorthirth</li>
+   			<li>fisgdriorthirth</li>
+   		</ul>
+   		<button class="btn2-outline">ABOUT US</button>
+   	</div>
+   </div><br><br><br><br>
+   <div class="section2">
+   	<h2 style="color:lightgray;">ABOUT US</h2>
+   	<h1 style="font-size:50px">Make your Dream with US</h1>
+   	<div class="center2">
+   		<div><img src="ar3.png">
+   			<h2>Interior</h2>
+   			<p>iewwiu euut etb wew ey ew7ywe79 fwe7wfb eagfq bvhjdf shgdsg</p>
+   		</div>
+   		<div><img src="ar4.png">
+   			<h2>Exterior</h2>
+   			<p>iewwiu euut etb wew ey ew7ywe79 fwe7wfb eagfq bvhjdf shgdsg</p>
+   		</div>
+   		<div><img src="ar5.png">
+   			<h2>Bridge</h2>
+   			<p>iewwiu euut etb wew ey ew7ywe79 fwe7wfb eagfq bvhjdf shgdsg</p>
+   		</div>
+   	</div>
+   </div><br><br><br><br><br><br><br><br>
+   <div class="section3">
+   	<div class="header3">
+   	<h3 style="color:lightgray;">PROJECT VIEW</h3>
+   	<h1 style="letter-spacing: 2px; font-size: 50px;">Our Lastest Projects</h1>
+   	</div>
+   	<div class="content3">
+   		<div class="cont1"><img src="ar6.png" class="img2">
+   		</div>
+   		<div class="cont2" style="width:30%; margin-top: 60px">
+   			<h3 style="color:lightgray;">DUBAI, UAE</h3>
+   			<p style="font-size:30px;">Abahoni Building</p>
+   			<p style="font-size:19px;color: lightgrey;">fsf djaufh fseufhw feuhw faiufew dsfiyf asfsiyfs fughr dsfus sauh safsduh fseu sdvdfoiudd esoughdf goudh uousdd</p>
+   			<button class="btn3-outline">VIEW MORE</button>
+   		</div>
+   	</div>
+       <br><br><br><br><br><br>
+   	<div class="content3">
+   		
+   		<div class="cont2" style="width:30%; margin-top: 130px">
+   			<h3 style="color:lightgray;">DUBAI, UAE</h3>
+   			<p style="font-size:30px;">Abahoni Building</p>
+   			<p style="font-size:19px;color: lightgrey;">fsf djaufh fseufhw feuhw faiufew dsfiyf asfsiyfs fughr dsfus sauh safsduh fseu sdvdfoiudd esoughdf goudh uousdd</p>
+   			<button class="btn3-outline">VIEW MORE</button>
+   		</div>
+   		<div class="cont1"><img src="ar7.png" class="img3">
+   		</div>
+   	</div>
+        <br><br><br><br><br><br>
+   	<div class="content3">
+   		<div class="cont1"><img src="ar8.png" class="img4">
+   		</div>
+   		<div class="cont2" style="width:30%; margin-top: 60px">
+   			<h3 style="color:lightgray;">DUBAI, UAE</h3>
+   			<p style="font-size:30px;">Abahoni Building</p>
+   			<p style="font-size:19px;color: lightgrey;">fsf djaufh fseufhw feuhw faiufew dsfiyf asfsiyfs fughr dsfus sauh safsduh fseu sdvdfoiudd esoughdf goudh uousdd</p>
+   			<button class="btn3-outline">VIEW MORE</button>
+   		</div>
+   	</div>
+       <br><br><br><br><br><br>
+   	<div class="content3">
+   		
+   		<div class="cont2" style="width:30%; margin-top: 130px">
+   			<h3 style="color:lightgray;">DUBAI, UAE</h3>
+   			<p style="font-size:30px;">Abahoni Building</p>
+   			<p style="font-size:19px;color: lightgrey;">fsf djaufh fseufhw feuhw faiufew dsfiyf asfsiyfs fughr dsfus sauh safsduh fseu sdvdfoiudd esoughdf goudh uousdd</p>
+   			<button class="btn3-outline">VIEW MORE</button>
+   		</div>
+   		<div class="cont1"><img src="ar9.png" class="img5">
+   		</div>
+   	</div>
+
+   </div>
+   <div class="section4">
+   	<div class="para">
+   	<p><img src="ar10.png"></p>
+   	<p>fhs fofhfw ewigj esiwj eewj eijw jww jweitw tr reroy torki ws uah frwi ttrhirt seiejt</p>
+   	<p>-MITHALI</p>
+   	</div>
+   </div>
+
+   <div class="section5">
+   	<div class="left5">
+   	 <img src="ar12.png" class="img6">	
+   	</div>
+   	<div class="right5">
+   		<h2 style="color:lightgray;">CONTACT US</h2>
+   		<h1 style="font-size:45px;">Send Your Message</h1>
+   		<input type="email" name=""value="Enter email"><br><br>
+   		<input type="text" name="" value="Subject"><br><br>
+   		<textarea rows="8" cols="62">Message</textarea><br><br>
+   		<button class="btn4-outline">SEND US</button>	
+   		
+   	</div>
+   </div>
+   <div class="footer">
+     <div class="footer1">
+     	<div><h2><span style="letter-spacing: 2px;">ARARAT </span><br><span style="color: lightgray; font-size: 14px;">ARCHITECTURE</span></h2>
+   		<span style="justify-content: space-between;">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+          <a href="#" class="fa fa-instagram"></a>
+
+          </span>
+      </div>
+     	<div class="f1">
+          <p style="font-size: 30px;">Do you have any Project or Query<br> <span style="font-size:15px;">jsjffh df gg shhtd gew htf uhduh iuwr ewyewub w7w ege</span></p>
+          </div>
+          <div>
+          	<button class="btn6-outline">CONTACT US</button>
+          </div>
+         
+     </div>
+     <div style=" background-color: black;">
+     	<hr >
+     </div>
+     <div class="footer2">
+     	<div>
+     	<ul>
+     		<li style="font-size:20px">Navigation</li><br>
+     		<li>Home</li><br>
+     		<li>About</li><br>
+     		<li>Services</li><br>
+     		<li>Blog</li><br>
+     		<li>Project</li>
+     	</ul>
+     	</div>
+     	<div>
+     	<ul>
+     		<li style="font-size:20px">Services</li><br>
+     		<li>Interior</li><br>
+     		<li>Exterior</li><br>
+     		<li>Bridge</li>
+     		
+     	</ul>
+     	</div>
+     	<div>
+     	<ul>
+     		<li style="font-size:20px">Speak now</li><br>
+     		<li>+91-2385 4885 454</li><br>
+     		<li>contact@23.com</li>
+     		
+     	</ul>
+     	</div>
+     </div>
+     </div>
+</body>
+</html>
